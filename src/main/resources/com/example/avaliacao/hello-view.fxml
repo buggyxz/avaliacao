@@ -10,12 +10,47 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<VBox alignment="CENTER" prefHeight="296.0" prefWidth="477.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.example.avaliacao.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-   
-       <Label fx:id="welcomeText" />
+      <Text layoutX="188.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciador de Tarefas">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prioridade">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="151.0" layoutY="84.0" />
+      <TextField layoutX="151.0" layoutY="123.0" />
+      <TextField layoutX="151.0" layoutY="159.0" />
+      <ListView layoutX="374.0" layoutY="96.0" prefHeight="122.0" prefWidth="200.0" />
+      <Button layoutX="151.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: gray;" text="Adicionar" textFill="WHITE" />
+      <TableView layoutX="151.0" layoutY="241.0" prefHeight="134.0" prefWidth="149.0">
+        <columns>
+          <TableColumn prefWidth="75.0" style="-fx-background-color: gray;" text="A fazer" />
+          <TableColumn prefWidth="75.0" text="Feitos" />
+        </columns>
+      </TableView>
+      <Text layoutX="386.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de tarefas pendentes.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="374.0" layoutY="229.0" prefHeight="25.0" prefWidth="200.0" promptText="Pesquisar" />
+      <Button layoutX="374.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: gray;" text="Concluir" textFill="WHITE" />
+      <Button layoutX="477.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: gray;" text="Excluir" textFill="WHITE" />
    </children>
-</VBox>
+</AnchorPane>
